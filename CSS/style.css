@@ -1,0 +1,597 @@
+/*MOBILE RESPONSIVE*/
+
+/*GENERAL*/
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+.centre {
+    text-align: center;
+}
+
+.header-text {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+}
+
+/*Rolling numbers*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'roll1 roll1 roll1 roll1 roll1 roll1'
+    'roll2 roll2 roll2 roll2 roll2 roll2'
+    'roll3 roll3 roll3 roll3 roll3 roll3';
+    justify-content: center;
+}
+
+.roll1 {
+    grid-area: roll1;
+}
+
+.roll2 {
+    grid-area: roll2;
+}
+
+.roll3 {
+    grid-area: roll3;
+}
+
+.number {
+    font-size: 45px;
+    background: linear-gradient(#6c93d3, #527bbd);
+    color: white;
+    padding: 55px 30px 0 30px;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: -1px 2px;
+}
+
+.roll-text {
+    font-size: 27px;
+}
+
+/*Visual CTAs*/
+
+.containCTA {
+    display: grid;
+    grid-template-areas: 'grid-coach grid-coach grid-coach grid-coach'
+    'grid-book grid-book grid-book grid-book'
+    'grid-pod grid-pod grid-pod grid-pod'
+    'grid-insta grid-insta grid-insta grid-insta';
+    grid-template-columns: repeat(4, 1fr);
+    height: 60rem;
+    margin-bottom: 100px;
+    gap: 5px;
+}
+
+.grid-coach {
+    grid-area: grid-coach;
+    background: url(../images/CTAs/coaching.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.grid-book {
+    grid-area: grid-book;
+    background: url(../images/CTAs/new-book.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.grid-pod {
+    grid-area: grid-pod;
+    background: url(../images/CTAs/podcast.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.grid-insta {
+    grid-area: grid-insta;
+    background: url(../images/CTAs/instagram.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+/*NAVIGATION*/
+
+.nav {
+    padding: 0 0 40px 0;
+    width: 100%;
+}
+
+i.mobile-toggle {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+    width: 35px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.header .nav li {
+    list-style-type: none;
+    display: block;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+.header .nav li a {
+    color: white;
+    font-weight: bold;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #4171bf;
+    height: 100vh;
+    list-style: none;
+    padding-left: 0;
+}
+
+.mobile-nav li {
+    padding: 20px;
+  }
+
+.mobile-nav a { 
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav.active {
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+}
+
+.bookUl {
+    margin-top: 180px;
+}
+
+/*SECTIONS*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about, .rollingnumb, .resources, .visualCTAs {
+    min-height: 50vh;
+}
+
+.offer {
+    background: url(../images/BG/can.png) no-repeat fixed;
+    background-size: contain;
+    background-position: center center; /* Centre the image horizontally and vertically */
+    margin: 0px;
+    min-height: 60vh;
+}
+
+.resources {
+    margin-bottom: 100px;
+}
+
+.bookHeader {
+    background: url(../images/BG/book.jpg) no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/*API - Resources - Books*/
+
+.books {
+    margin: 50px 10px;
+}
+
+.book-list {
+    list-style-type: none;
+    margin: 50px 10px;
+}
+
+.book-list li {
+    margin: 50px 0;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(65, 113, 191, 0.1);
+}
+
+/*HEADINGS*/
+
+.h1 {
+    font-size: 30px;
+    color: white;
+    margin: 280px 30px 40px 30px !important;
+    line-height: 150%;
+}
+
+.h2 {
+    font-size: 28px;
+    margin-top: 100px;
+}
+
+.bookh2 {
+    margin: 200px 0 20px 0;
+}
+
+.h3 {
+    font-size: 20px;
+}
+
+/*TEXT*/
+
+.para1 {
+    font-size: 16px;
+    margin: 40px 50px;
+}
+
+.para2 {
+    margin: 40px 40px 60px 40px;
+}
+
+.overlayText {
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+}
+
+.textWhite {
+    color: white;
+}
+
+/*LINKS*/
+
+a {
+    text-decoration: none; /*remove underlines*/
+}
+
+
+/*CTAS - BUTTONS*/
+
+.cta {
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    z-index: 1000 !important;
+}
+
+.cta:hover {
+    background-color: #166ee1; /*#166ee1*/
+    border: 1px solid black;
+}
+
+.ctaColoured {
+    color: white;
+    background-color: #166ee1; /*#527bbd*/
+    border: 2px solid #4171bf;
+}
+
+.ctaColoured:hover {
+    border: 2px solid black;
+}
+
+/*VIDEO*/
+
+.header-vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*IFRAMES*/
+
+iframe {
+    overflow-y: hidden;
+    width: 100% !important;
+}
+
+/*SOCIAL*/
+
+.social {
+    width: 50px;
+    height: 50px;
+    margin: 70px 0 30px 0;
+    padding: 0 5px;
+}
+
+
+@media (min-width: 440px) {
+
+/*HEADINGS*/
+
+.h1 {
+    margin: 280px 0 40px 0 !important;
+}
+
+/*TEXT*/    
+.para2 {
+    margin: 40px;
+}
+
+/*SECTIONS*/
+
+.about, .rollingnumb, .resources, .visualCTAs {
+    min-height: 40vh;
+}
+
+.resources {
+    min-height: 50vh;
+}
+
+}
+
+
+@media (min-width: 480px) {
+
+/*NAV*/
+
+    .bookUl {
+        margin-top: 187px;
+    }
+
+/*HEADINGS*/    
+
+.h1 {
+    margin: 80px 0 40px 0;
+}
+
+/*SECTIONS*/
+
+    .resources {
+        margin-bottom: 50px;
+    }
+
+/*Visual CTAs*/
+
+    .containCTA {
+        display: grid;
+        grid-template-areas: 'grid-coach grid-coach grid-book grid-book'
+        'grid-pod grid-pod grid-insta grid-insta';
+        grid-template-columns: repeat(4, 1fr);
+        height: 600px;
+        margin-bottom: 100px;
+        gap: 5px;
+    }
+
+/*API - Resources - Books*/
+
+    .books {
+        margin: 50px 30px;
+    }
+
+}
+
+
+@media (min-width: 530px) {
+
+    /*NAV*/
+
+    i.mobile-toggle {
+        display: none;
+    }
+
+    /*NAV*/
+
+    .header .nav li {
+        display: inline;
+        padding: 30px;
+        margin-top: 60px;
+    }
+
+    .ul {
+        margin-top: 80px;
+    }
+
+    .mobile-nav {
+        display: inline;
+        background-color: transparent;
+        height: 10vh;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+/*NAV*/
+
+    .bookUl {
+        margin-top: 190px;
+    }
+
+/*HEADINGS*/    
+
+.h1 {
+    margin: 80px 0 40px 0;
+}
+
+/*TEXT*/
+
+.para1 {
+    margin: 40px 80px;
+}
+
+/*Rolling numbers*/
+
+.number {
+    padding: 45px 20px 0 20px;
+    margin-bottom: 15px;
+}
+
+/*API - Resources - Books*/
+
+.books {
+    margin: 50px 80px;
+}
+
+.book-list {
+    list-style-type: none;
+}
+}
+
+
+@media (min-width: 992px) {
+
+/*NAV*/
+
+    .bookUl {
+        margin-top: 95px;
+        padding-top: 50px;
+    }
+
+/*SECTIONS*/
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.bookHeader {
+    height: 80vh;
+}
+
+/*HEADINGS*/    
+
+.h1 {
+    margin: 80px 0 40px 0;
+}
+
+/*Rolling numbers*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'roll1 roll1 roll2 roll2 roll3 roll3';
+    justify-content: center;
+    gap: 2px;
+}
+
+.number {
+    padding: 45px 10px 0 10px;
+    font-size: 60px;
+}
+
+/*API - Resources - Books*/
+
+.books {
+    margin: 50px 120px;
+}
+
+/*TEXT*/
+
+.para1 {
+    margin: 50px 180px 0 180px;
+}
+
+/*CTAs*/
+
+.ctaColoured {
+    margin-top: 100px;
+}
+
+/*Visual CTAs*/
+
+.containCTA {
+    display: grid;
+    grid-template-areas: 'grid-coach grid-book grid-pod grid-insta';
+    grid-template-columns: repeat(4, 1fr);
+    height: 600px;
+    margin-bottom: 100px;
+    gap: 5px;
+}
+}
+
+
+
+@media (min-width: 1200px) {
+
+/*GENERAL*/
+
+body {
+    font-size: 18px;
+}
+
+/*NAV*/
+
+.bookUl {
+    margin-top: 95px;
+    padding-top: 50px;
+}
+
+/*HEADINGS*/
+
+.h1 {
+    font-size: 36px;
+    margin: 120px 0 50px 0;
+}
+
+.h2 {
+    font-size: 31px;
+}
+
+.h3 {
+    font-size: 26px;
+}
+
+/*SECTION*/
+
+/*API - Resources - Books*/
+
+.books {
+    margin: 0 100px;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+/*TEXT*/
+
+.para1 {
+    font-size: 18px;
+    margin: 50px 200px 20px 200px;
+}
+
+/*VIDEO*/
+
+.header-vid {
+    width: 100%;
+}
+
+/*Rolling numbers*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'roll1 roll1 roll2 roll2 roll3 roll3';
+    justify-content: center;
+    gap: 50px;
+}
+
+/*VISUAL CTAS*/
+
+.grid-coach:hover, .grid-book:hover, .grid-pod:hover, .grid-insta:hover {
+    width: 500px;
+}
+
+}
